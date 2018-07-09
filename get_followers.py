@@ -51,7 +51,7 @@ def get_follower_ids(centre, max_depth=1, current_depth=0, taboo_list=[]):
         taboo_list.append(centre)
 
     try:
-        userfname = os.path.join('twitter-users', str(centre) + '.json')
+        userfname = os.path.join('twitter-users/', str(centre) + '.json')
         if not os.path.exists(userfname):
             print 'Retrieving user details for twitter id %s' % str(centre)
             while True:
